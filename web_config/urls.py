@@ -29,4 +29,5 @@ urlpatterns = [
     path("hello/requestwithservice/", helloview.requestwithservice),
     path("hello/responsedeeplearning", helloview.response_deeplearning),
     path("board/listwithmongo/", boardview.listwithmongo),
+    path('board/', include('board.urls')),
 ]
