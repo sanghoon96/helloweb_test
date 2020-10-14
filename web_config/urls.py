@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from hello import views as helloview
+from board import views as boardview
 
 
 urlpatterns = [
@@ -27,4 +28,5 @@ urlpatterns = [
     path("hello/form/", helloview.form, name="helloform"),
     path("hello/requestwithservice/", helloview.requestwithservice),
     path("hello/responsedeeplearning", helloview.response_deeplearning),
+    path("board/listwithmongo/", boardview.listwithmongo),
 ]
